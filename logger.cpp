@@ -80,7 +80,7 @@ void Logger::_logToOutputs(std::string logLine) {
 
 std::string Logger::_generateLogLine(std::string logMessage, int logLevel) {
   std::ostringstream oss;
-  oss << _loggerName << " | " << _logLevelMap[logLevel] << " | " << _getISOTimestamp() << " | " << logMessage;
+  oss << _logLevelMap[logLevel] << " | " << _loggerName << " | " << _getISOTimestamp() << " | " << logMessage;
   return oss.str();
 }
 
